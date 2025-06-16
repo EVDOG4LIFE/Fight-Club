@@ -1,7 +1,7 @@
 # Next.js starter kit with Appwrite
 
 Kickstart your Next.js development with this ready-to-use starter project integrated with [Appwrite](https://www.appwrite.io)
-
+ 
 ## 🚀Getting started
 
 ###
