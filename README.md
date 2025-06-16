@@ -6,7 +6,7 @@ Kickstart your Next.js development with this ready-to-use starter project integr
 
 ###
 Clone the Project
-Clone this repository to your local machine using Git:
+Clone this repository to your local machine using Git: OOOOOOO MAN
 
 `git clone https://github.com/appwrite/starter-for-nextjs`
 
