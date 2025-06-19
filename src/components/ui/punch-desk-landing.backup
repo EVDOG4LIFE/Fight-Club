@@ -1,0 +1,95 @@
+"use client"
+
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion';
+import {
+  Sword,
+  Shield,
+  Target,
+  Zap,
+  Crown,
+  Star,
+  ArrowRight,
+  Check,
+  Users,
+  Trophy,
+  Flame,
+  ChevronLeft,
+  ChevronRight,
+  Menu,
+  X,
+  Github,
+  Twitter,
+  Linkedin,
+  Ticket,
+  MapPin,
+  Plane,
+  Gavel,
+  Hand
+} from 'lucide-react';
+
+interface TestimonialData {
+  tempId: number;
+  testimonial: string;
+  by: string;
+  imgSrc: string;
+}
+
+interface TestimonialCardProps {
+  position: number;
+  testimonial: TestimonialData;
+  handleMove: (steps: number) => void;
+  cardSize: number;
+}
+
+const SQRT_5000 = Math.sqrt(5000);
+
+const fightTestimonials: TestimonialData[] = [
+  {
+    tempId: 0,
+    testimonial: "Finally, a customer service platform that lets me unleash my inner warrior. My KO rate is 95%!",
+    by: "Marcus 'The Destroyer', Senior Combat Agent",
+    imgSrc: "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    tempId: 1,
+    testimonial: "I've never felt more alive than when I'm in the ring with difficult customers. PunchDesk changed my life!",
+    by: "Sarah 'Iron Fist', Customer Combat Specialist",
+    imgSrc: "https://i.pravatar.cc/150?img=2"
+  },
+  {
+    tempId: 2,
+    testimonial: "The adrenaline rush of a good customer beatdown is unmatched. 10/10 would recommend!",
+    by: "Jake 'The Hammer', Support Warrior",
+    imgSrc: "https://i.pravatar.cc/150?img=3"
+  },
+  {
+    tempId: 3,
+    testimonial: "My stress levels dropped 90% after I started using PunchDesk. Nothing beats a good customer fight!",
+    by: "Lisa 'Knockout', Service Fighter",
+    imgSrc: "https://i.pravatar.cc/150?img=4"
+  },
+  {
+    tempId: 4,
+    testimonial: "Best investment our company ever made. Customer satisfaction through intimidation works!",
+    by: "Mike 'Bruiser', Team Lead",
+    imgSrc: "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    tempId: 5,
+    testimonial: "I used to dread customer calls. Now I can't wait to throw down with Karen from accounting!",
+    by: "Alex 'Thunder', Combat Rep",
+    imgSrc: "https://i.pravatar.cc/150?img=6"
+  }
+];
+
+// Component implementation will be added in the next step
+const PunchDeskLanding: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-black text-white">
+      <h1>Loading PunchDesk...</h1>
+    </div>
+  );
+};
+
+export default PunchDeskLanding;
